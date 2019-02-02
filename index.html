@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header-gray-wrapper">
+      <input class="visually-hidden" type="radio" id="slide-1" name="toggle" checked>
+      <input class="visually-hidden" type="radio" id="slide-2" name="toggle">
+      <input class="visually-hidden" type="radio" id="slide-3" name="toggle">
+      <div class="site-wrapper">
+        <header class="main-header">
+          <div class="three-columns">
+            <a href="#" class="logo-link">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="65" viewBox="0 0 160 65">
+                <image id="nerds-logo" width="160" height="65" xlink:href="data:img/png;base64,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"/>
+              </svg>      
+            </a>
+            <nav class="header-nav">
+              <ul>
+                <li class="header-nav-item"><a href="#">Студия</a></li>
+                <li class="header-nav-item"><a href="#">Клиенты</a></li>
+                <li class="header-nav-item"><a href="#">Магазин</a></li>
+                <li class="header-nav-item"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <ul class="user-nav">
+              <li class="user-nav-item">
+                <a href="#">Корзина</a>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">  
+                  <image id="cart-icon" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAQAAACR313BAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjAgETGBLxugOxAAAAk0lEQVQY032QPQ6CQBBG3xrR1tZTUHESq/VOVlS0JjINhbUHMIZo7DwDN9CABgtmxcR1vmbyzcv8urIH4OwzIppoTGUew65cADeWROV6QCpWcTw0r8HCRxtfeBrY37n+kIYN6VRNzXj3gz1bDv6lm4Os2VlvORl3/5dWSy6t5GM6+DC7JaHzsw9WH2YXdBRfXdW/AVZ0LKUlb6qgAAAAAElFTkSuQmCC"/>
+                </svg>  
+              </li>
+            </ul>
+          </div>
+
+          <section class="slider"> 
+            <ul class="slider-list">
+              <li class="slider-item slide" id="slide1">
+                <h3 class="slide-title">
+                  Долго, дорого, скорпулезно.
+                </h3>
+                <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="button slide-button" href="#"><span>Узнать больше</span></a>
+              </li>
+    
+              <li class="slider-item slide" id="slide2">
+                <h3 class="slide-title">
+                  Любим математику как никто другой
+                </h3>
+                <p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="button slide-button" href="#"><span>Узнать больше</span></a>
+              </li>
+    
+              <li class="slider-item slide" id="slide3">
+                <h3 class="slide-title">
+                  Только ночь, только хардкор
+                </h3>
+                <p class="slide-text">Работать днём, как все? Мы против этого. Ближе к полуночи работа нолько начинается.</p>
+                <a class="button slide-button" href="#"><span>Узнать больше</span></a>
+              </li>
+            </ul>
+
+            <div class="slider-controls">
+                <label for="slide-1">Первый</label>
+                <label for="slide-2">Второй</label>
+                <label for="slide-3">Третий</label>
+              </div>
+          </section>
+        </header>
+      </div> 
+    </div>
+    <div class="site-wrapper">
+      <main>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества студии Нёрдс</h2>
+          <ul class="advantages-list">
+            <li class="advavantages-item">
+              <img src="img/illustration-1.jpg" width="300" height="145" alt="Картинка веб-сайта">
+              <h3 class="advantage-title">Веб-сайты</h3>
+              <p class="advantage-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="button advantage-link" href="#"><span>Заказать</span></a>
+            </li>
+            <li class="advavantages-item">
+                <img src="img/illustration-2.jpg" width="300" height="145" alt="Картинка с мобильными устройствами">
+                <h3 class="advantage-title">Приложения</h3>
+                <p class="advantage-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+                <a class="button advantage-link" href="#"><span>Заказать</span></a>
+            </li>
+            <li class="advavantages-item">
+                <img src="img/illustration-3.jpg" width="300" height="145" alt="Картинка с презентацией">
+                <h3 class="advantage-title">Презентации</h3>
+                <p class="advantage-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+                <a class="button advantage-link" href="#"><span>Заказать</span></a>
+            </li>
+          </ul>
+        </section>
+        <div class="two-columns">
+          <section class="studio-info">
+            <h3 class="visually-hidden">Информация о студии Нёрдс</h3>
+            <b class="studio-info-title">Мы — маленькая, но гордая дизайн-студия из Краснодара</b>
+            <p class="studio-info-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
+              рук, как роботы.
+            </p>
+            <p class="studio-offer-title">Выполняем заказы на разработку:</p>
+            <ul class="studio-offer-list">
+              <li class="studio-offer-item">Веб-сайтов любой сложности</li>
+              <li class="studio-offer-item">Мобильных приложений для iOS и Android</li>
+              <li class="studio-offer-item">Слайдшоу и видео для корпоративных презентаций</li>              
+            </ul>
+          </section>
+          <section class="studio-statictics">
+            <h3 class="visually-hidden">Статистика студии Нёрдс</h3>
+            <img src="img/nerds-illustration.jpg" width="360" height="210" alt="Логотип Нёрдс">
+            <p class="studio-statistics-title">с 2004 года любим точность во всем:</p>
+            <ul class="studio-statistics-list">
+              <li class="studio-statistics-item"><span class="statistics-percent">146<sup>%</sup></span>Уровень самоотдачи</li>
+              <li class="studio-statistics-item"><span class="statistics-percent">100<sup>%</sup></span>Соблюдение сроков</li>
+              <li class="studio-statistics-item"><span class="statistics-percent">50<sup>%</sup></span>Минимальная предоплата</li>
+            </ul>
+          </section>
+         </div>
+
+        <section class="partners">
+          <h3 class="visually-hidden">Список партнеров Нёрдс</h3>
+          <ul class="partners-list">
+            <li class="partners-item">
+              <a href="#"><img src="img/logo-1.png" width="199" height="68" alt="HTML-Academy"></a>
+            </li>
+            <li class="partners-item">
+                <a href="#"><img src="img/logo-2.png" width="209" height="87" alt="Borodinski-Barbershop"></a>
+            </li>
+            <li class="partners-item">
+                <a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink"></a>
+            </li>
+            <li class="partners-item">
+                <a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka"></a>
+            </li>              
+          </ul>
+        </section>
+      </main>
+    </div>
+
+      <section class="map" aria-label="Нёрдс на карте">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" height="415" allowfullscreen="true"></iframe>
+        <div class="map-container">
+          <section class="contacts">
+            <span class="contacts-title">NЁRDS Design studio</span>
+            <p class="contacts-adress">191186; Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts-telephone">тел. +7(812)275-75-75</p>
+            <a class="button contacts-button"><span>Напишите нам</span></a>
+          </section>
+        </div>
+      </section>
+      
+    <div class="site-wrapper">
+      <footer class="main-footer">
+        <ul class="footer-nav" aria-label="Нёрдс в социальных сетях">
+          <li class="footer-nav-item">
+            <a href="#" class="nav-item-vk">
+              <span class="visually-hidden">Вконтакте</span>              
+            </a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="nav-item-fb">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="nav-item-inst">
+              <span class="visually-hidden">Инстаграм</span>            
+            </a>
+          </li>
+        </ul>
+        <div class="footer-info">
+          <h3 class="footer-info-title">Давайте дружить, это выгодно!</h3>
+          <span class="footer-info-text">Скидка 10% для друзей из социальных сетей.</span>
+        </div>
+      </footer>
+    </div>
+    
+    <section class="write-us">
+      <form class="write-us-form" id="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <h3 class="wrire-us-title">Напишите нам</h3>
+        <div class="write-us-form-two-columns">
+          <p>
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="e-mail">Ваш e-mail:</label>
+            <input type="email" id="e-mail" placeholder="email@example.com">
+          </p>
+        </div>
+        <label for="text-form">Текст письма:</label>
+        <textarea class="text-form" id="text-form" placeholder="В свободной форме"></textarea>
+        <button class="button write-us-button">Отправить</button>
+      </form>
+      <button class="close-button" type="button">Закрыть окно</button>
+    </section>
+  </body>
+</html>
