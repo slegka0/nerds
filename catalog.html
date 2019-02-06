@@ -41,91 +41,8 @@
     <div class="site-wrapper">
       <main>
         <div class="catalog-two-columns">
-          <form class="filters" id="filters-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="cost-filter">
-              <legend class="legend-filter">Стоимость:</legend>
-              <div class="cost-range-controls">
-                <div class="price-bar">
-                  <div class="colored-price-bar"></div>
-                  <div class="toggle left-toggle"></div>
-                  <div class="toggle right-toggle"></div>
-                </div>
-              </div>
-
-              <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
-              </div>
-            </fieldset>
-            <fieldset class="grid-filter">
-              <legend class="legend-filter legend-grid">Сетка:</legend>
-              <ul class="grid-filter-list"> 
-                <li class="grid-filter-item">
-                  <label>
-                    <input type="radio" class="visually-hidden" name="grid-type" value="Адаптивная" checked>
-                    <span class="radio-inditicator"></span>
-                    Адаптивная
-                  </label>
-                </li>
-                <li class="grid-filter-item">
-                  <label>
-                    <input type="radio" class="visually-hidden" name="grid-type" value="Фиксированная">
-                    <span class="radio-inditicator"></span>
-                    Фиксированная
-                  </label>
-                </li>
-                <li class="grid-filter-item">
-                  <label>
-                    <input type="radio" class="visually-hidden" name="grid-type" value="Резиновая">
-                    <span class="radio-inditicator"></span>
-                    Резиновая
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <fieldset class="feature-filter">
-              <legend class="legend-filter legend-feature">Особенности:</legend>
-              <ul class="feature-filter-list">
-                <li class="feature-filter-item">
-                  <label>
-                    <input type="checkbox" class="visually-hidden" name="feature-type" value="Слайдер">
-                    <span class="checkbox-inditicator"></span>
-                    Слайдер
-                  </label>
-                </li>
-                <li class="feature-filter-item">
-                  <label>
-                    <input type="checkbox" class="visually-hidden" name="feature-type" value="Блок преимуществ">
-                    <span class="checkbox-inditicator"></span>
-                    Блок преимуществ
-                  </label>
-                </li>
-                <li class="feature-filter-item">
-                  <label>
-                    <input type="checkbox" class="visually-hidden" name="feature-type" value="Новости">
-                    <span class="checkbox-inditicator"></span>
-                    Новости
-                  </label>
-                </li>
-                <li class="feature-filter-item">
-                  <label>
-                    <input type="checkbox" class="visually-hidden" name="feature-type" value="Галерея">
-                    <span class="checkbox-inditicator"></span>
-                    Галерея
-                  </label>
-                </li>
-                <li class="feature-filter-item">
-                  <label>
-                    <input type="checkbox" class="visually-hidden" name="feature-type" value="Корзина">
-                    <span class="checkbox-inditicator"></span>
-                    Корзина
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-
-            <button type="submit" class="button filter-button">Показать</button>
+          <form class="filters">
+            <button class="button filter-button">Показать</button>
           </form>
           <section class="products">
             <div class="sorting-wrapper">
@@ -136,7 +53,7 @@
                 <li class="sorting-item"><a href="#">По названию</a></li>
               </ul>
               <ul class="user-sorting-position">
-                <li class="sorting-down active-sorting-position">
+                <li class="sorting-up">
                   <a href="#">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
@@ -144,7 +61,7 @@
                     </svg>                   
                   </a>
                 </li>
-                <li class="sorting-up">
+                <li class="sorting-down">
                   <a href="#">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
@@ -259,8 +176,6 @@
           <span class="footer-info-text">Скидка 10% для друзей из социальных сетей.</span>
         </div>
       </footer>
-    </div>   
-    
-    <script src="js/script.js"></script>
+    </div>      
   </body>
 </html>   
