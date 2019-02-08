@@ -636,24 +636,19 @@ input[type="radio"].visually-hidden {
   border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
-.write-us {
-  width: 960px;
-  padding: 70px 100px 85px 100px;
 
-  background-color: #ffffff;
-}
 input[type="text"],
 input[type="email"] {
   width: 360px;
   border: none;
   border-radius: 3px;
   border: 2px solid #d7dcde;
-  padding: 15px;
+  padding: 14px 13px;
 }
 .wrire-us-title {
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 23px;
 
   font-size: 45px;
   line-height: 45px;
@@ -661,27 +656,54 @@ input[type="email"] {
 }
 .write-us-button {
   margin: 0;
-  padding: 17px 80px;
+  padding: 17px 84px 16px 84px;
 
   background-color: #fb565a;
 }
 .text-form {
   width: 760px;
-  padding: 15px;
-  margin-bottom: 50px;
-  min-height: 120px;
+  padding: 13px;
+  padding-top: 11px;
+  margin-bottom: 40px;
+  min-height: 118px;
   resize: none;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
 }
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 .text-form::placeholder {
   color: #a1a1a1;
 }
+input[type="text"]:hover,
+input[type="email"]:hover,
+.text-form:hover {
+  color: #a1a1a1;
+  border: 2px solid #b4b9bb;
+}
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+.text-form:focus::placeholder {
+  color: #444444;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+.text-form:focus {
+  border: 2px solid #000000;
+  outline: none;
+}
+.modal-error {
+  animation-name: invisibility;
+  animation-duration: 1s;
+}
 .write-us-form-two-columns {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 40px;
+  margin-bottom: 14px;
+}
+.write-us-form-two-columns p {
+  width: 360px;
 }
 .footer-nav-item a::after {
   content: "";
@@ -721,20 +743,43 @@ input[type="email"]::placeholder,
 .write-us {
   display: none;
   position: fixed;
-  top: 10%;
+  top: 20%;
   left: 50%;
   margin-left: -480px;
   z-index: 20;
 
-  box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+  width: 960px;
+  padding: 67px 100px 82px 100px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 20px 60px 2px rgba(0, 1, 1, 0.75);
 }
+.write-us label {
+  display: inline-block;
+
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+@keyframes invisibility {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+.modal-show {
+  display: block;
+  
+  animation-name: invisibility;
+  animation-duration: 0.9s;
+}
+
 .close-button {
   position: absolute;
-  top: 80px;
-  right: 90px;
+  top: 75px;
+  right: 97px;
 
   font-size: 0;
   cursor: pointer;
+  outline: none;
+  background: transparent;
 }
 .close-button::before,
 .close-button::after {
@@ -742,8 +787,8 @@ input[type="email"]::placeholder,
   
   position: absolute;
 
-  width: 3px;
-  height: 20px;
+  width: 4px;
+  height: 26px;
 
   background-color: #fb565a;
   opacity: 0.3;
@@ -753,6 +798,14 @@ input[type="email"]::placeholder,
 }
 .close-button::after {
   transform: rotate(45deg);
+}
+.close-button:hover::before,
+.close-button:hover::after {
+  opacity: 1;
+}
+.close-button:active::before,
+.close-button:active::after {
+  opacity: 0.1;
 }
 .catalog-title {
   font-size: 55px;
@@ -790,7 +843,7 @@ input[type="email"]::placeholder,
 .filters {
   width: 280px;
 
-  margin-right: 135px;
+  margin-right: 137px;
 }
 .products {
   padding-top: 3px;
@@ -994,7 +1047,7 @@ input[type="email"]::placeholder,
   border: none;
 }
 .cost-filter {
-  width: 260px;
+  width: 259px;
 
   margin-bottom: 53px;
 }
@@ -1068,23 +1121,25 @@ input[type="email"]::placeholder,
 
   color: #283136;
 }
+.min-price {
+  margin-right: 35px;
+}
 .price-controls {
   display: flex;
-  justify-content: space-between;
 
   text-transform: uppercase;
 }
 .price-controls input {
-  width: 80px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-left: 10px;
+  width: 78px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  
+  margin-left: 8px;
+  box-sizing: border-box;
 
   text-align: center;
   background-color: #eeeeee;
-  border: none;
+  border: 2px solid transparent;
 }
 .cost-range-controls {
   padding: 38px 20px 40px 20px;
@@ -1151,8 +1206,6 @@ input[type="email"]::placeholder,
 .user-sorting-position .active-sorting-position {
   opacity: 1.0;
 }
-
-
 
 
 
