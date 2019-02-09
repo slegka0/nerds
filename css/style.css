@@ -637,8 +637,8 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-input[type="text"],
-input[type="email"] {
+.write-us-name,
+.write-us-email {
   width: 360px;
   border: none;
   border-radius: 3px;
@@ -692,10 +692,7 @@ input[type="email"]:focus,
   border: 2px solid #000000;
   outline: none;
 }
-.modal-error {
-  animation-name: invisibility;
-  animation-duration: 1s;
-}
+
 .write-us-form-two-columns {
   display: flex;
   justify-content: space-between;
@@ -790,8 +787,7 @@ input[type="email"]:focus,
   width: 4px;
   height: 26px;
 
-  background-color: #fb565a;
-  opacity: 0.3;
+  background-color: #fecccd;
 }
 .close-button::before {
   transform: rotate(-45deg);
@@ -801,11 +797,11 @@ input[type="email"]:focus,
 }
 .close-button:hover::before,
 .close-button:hover::after {
-  opacity: 1;
+  background-color: #fb565a;
 }
 .close-button:active::before,
 .close-button:active::after {
-  opacity: 0.1;
+  background-color: #ffeeee;
 }
 .catalog-title {
   font-size: 55px;
@@ -1206,9 +1202,18 @@ input[type="email"]:focus,
 .user-sorting-position .active-sorting-position {
   opacity: 1.0;
 }
-
-
-
-
+.modal-error {
+  color: #e74246;
+  border-color: #e74246;
+}
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+.modal-error-shake {
+  animation-name: shake;
+  animation-duration: 1s;
+}
 
 
