@@ -128,6 +128,7 @@
             <button type="submit" class="button filter-button">Показать</button>
           </form>
           <section class="products">
+            <h2 class="visually-hidden">Продукты Нёрдса</h2>
             <div class="sorting-wrapper">
               <span class="products-title">Сортировать:</span> 
               <ul class="sorting-position">
@@ -138,7 +139,7 @@
               <ul class="user-sorting-position">
                 <li class="sorting-down active-sorting-position">
                   <a href="#">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                       <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
                     </svg>                   
@@ -146,7 +147,7 @@
                 </li>
                 <li class="sorting-up">
                   <a href="#">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                       <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
                     </svg>
@@ -222,9 +223,10 @@
     </div>
 
     <section class="map" aria-label="Нёрдс на карте">
-      <iframe src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" height="415" allowfullscreen="true"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" height="415" allowfullscreen="allowfullscreen"></iframe>
       <div class="map-container">
         <section class="contacts">
+          <h2 class="visually-hidden">Контакты Нёрдс</h2>
           <span class="contacts-title">NЁRDS Design studio</span>
           <p class="contacts-adress">191186; Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p class="contacts-telephone">тел. +7(812)275-75-75</p>
@@ -268,21 +270,21 @@
           <div class="write-us-form-two-columns">
             <p>
               <label for="name">Ваше имя:</label>
-              <input type="text" id="name" placeholder="Имя Фамилия">
+              <input class="write-us-name" name="name" type="text" id="name" placeholder="Имя Фамилия">
             </p>
             <p>
               <label for="e-mail">Ваш e-mail:</label>
-              <input type="email" id="e-mail" placeholder="email@example.com">
+              <input class="write-us-email" name="email" type="email" id="e-mail" placeholder="email@example.com">
             </p>
           </div>
           <label for="text-form">Текст письма:</label>
           <textarea class="text-form" id="text-form" placeholder="В свободной форме"></textarea>
-          <button class="button write-us-button" type="submit">Отправить</button>
+          <button class="button write-us-button" name="text" type="submit">Отправить</button>
         </form>
         <button class="close-button" type="button">Закрыть окно</button>
       </section>
 
-      
+
     <script src="js/script.js"></script>
   </body>
 </html>   

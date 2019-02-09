@@ -146,9 +146,10 @@
     </div>
 
       <section class="map" aria-label="Нёрдс на карте">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" height="415" allowfullscreen="true"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA" height="415" allowfullscreen="allowfullscreen"></iframe>
         <div class="map-container">
           <section class="contacts">
+            <h2 class="visually-hidden">Контакты Нёрдс</h2>
             <span class="contacts-title">NЁRDS Design studio</span>
             <p class="contacts-adress">191186; Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p class="contacts-telephone">тел. +7(812)275-75-75</p>
@@ -191,15 +192,15 @@
         <div class="write-us-form-two-columns">
           <p>
             <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Имя Фамилия">
+            <input class="write-us-name" name="name" type="text" id="name" placeholder="Имя Фамилия">
           </p>
           <p>
             <label for="e-mail">Ваш e-mail:</label>
-            <input type="email" id="e-mail" placeholder="email@example.com">
+            <input class="write-us-email" name="email" type="email" id="e-mail" placeholder="email@example.com">
           </p>
         </div>
         <label for="text-form">Текст письма:</label>
-        <textarea class="text-form" id="text-form" placeholder="В свободной форме"></textarea>
+        <textarea class="text-form" name="text" id="text-form" placeholder="В свободной форме"></textarea>
         <button class="button write-us-button" type="submit">Отправить</button>
       </form>
       <button class="close-button" type="button">Закрыть окно</button>
