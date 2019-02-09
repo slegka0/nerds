@@ -53,6 +53,8 @@ input[type="radio"].visually-hidden {
   padding: 0px 140px;
 }
 .three-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .header-nav ul,
@@ -137,6 +139,8 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 .header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   margin: 0;
@@ -144,8 +148,11 @@ input[type="radio"].visually-hidden {
   padding-top: 25px;
 }
 .user-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .header-nav-item {
   margin-right: 47px;
@@ -264,8 +271,12 @@ input[type="radio"].visually-hidden {
   color: #444444;
 }
 .advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   padding: 0;  
 }
@@ -295,8 +306,12 @@ input[type="radio"].visually-hidden {
   margin-right: 60px;
 }
 .two-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 
   margin-bottom: 125px;
@@ -378,17 +393,28 @@ input[type="radio"].visually-hidden {
   bottom: -36px;
 }
 .partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+
+      -ms-flex-pack: justify;
+
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   padding: 0;
   padding-left: 32px;
 }
 .partners-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 
   min-height: 87px;
@@ -431,13 +457,19 @@ input[type="radio"].visually-hidden {
   margin-right: 43px;
 }
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   padding-bottom: 70px;
 }
 .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   margin: 0;
   padding: 0;
@@ -474,14 +506,21 @@ input[type="radio"].visually-hidden {
   margin-bottom: 11px;
 }
 .studio-statistics-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   padding: 0;
   margin: 0;
 }
 .studio-statistics-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   margin-right: 19px;
 }
@@ -545,7 +584,8 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 .button:active {
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 .button:active span {
   opacity: 0.3;
@@ -670,6 +710,21 @@ input[type="radio"].visually-hidden {
   border: 2px solid #d7dcde;
   border-radius: 3px;
 }
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+.text-form::-webkit-input-placeholder {
+  color: #a1a1a1;
+}
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+.text-form:-ms-input-placeholder {
+  color: #a1a1a1;
+}
+input[type="text"]::-ms-input-placeholder,
+input[type="email"]::-ms-input-placeholder,
+.text-form::-ms-input-placeholder {
+  color: #a1a1a1;
+}
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 .text-form::placeholder {
@@ -680,6 +735,21 @@ input[type="email"]:hover,
 .text-form:hover {
   color: #a1a1a1;
   border: 2px solid #b4b9bb;
+}
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="email"]:focus::-webkit-input-placeholder,
+.text-form:focus::-webkit-input-placeholder {
+  color: #444444;
+}
+input[type="text"]:focus:-ms-input-placeholder,
+input[type="email"]:focus:-ms-input-placeholder,
+.text-form:focus:-ms-input-placeholder {
+  color: #444444;
+}
+input[type="text"]:focus::-ms-input-placeholder,
+input[type="email"]:focus::-ms-input-placeholder,
+.text-form:focus::-ms-input-placeholder {
+  color: #444444;
 }
 input[type="text"]:focus::placeholder,
 input[type="email"]:focus::placeholder,
@@ -694,8 +764,12 @@ input[type="email"]:focus,
 }
 
 .write-us-form-two-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   margin-bottom: 14px;
 }
@@ -749,13 +823,18 @@ input[type="email"]:focus,
   padding: 67px 100px 82px 100px;
 
   background-color: #ffffff;
-  box-shadow: 0px 20px 60px 2px rgba(0, 1, 1, 0.75);
+  -webkit-box-shadow: 0px 20px 60px 2px rgba(0, 1, 1, 0.75);
+          box-shadow: 0px 20px 60px 2px rgba(0, 1, 1, 0.75);
 }
 .write-us label {
   display: inline-block;
 
   font-weight: 700;
   margin-bottom: 6px;
+}
+@-webkit-keyframes invisibility {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 @keyframes invisibility {
 	0% { opacity: 0; }
@@ -764,8 +843,11 @@ input[type="email"]:focus,
 .modal-show {
   display: block;
   
-  animation-name: invisibility;
-  animation-duration: 0.9s;
+  -webkit-animation-name: invisibility;
+  
+          animation-name: invisibility;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
 }
 
 .close-button {
@@ -790,10 +872,14 @@ input[type="email"]:focus,
   background-color: #fecccd;
 }
 .close-button::before {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .close-button::after {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .close-button:hover::before,
 .close-button:hover::after {
@@ -831,8 +917,12 @@ input[type="email"]:focus,
   margin-bottom: 55px;
 }
 .catalog-two-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   margin-bottom: 60px;
 }
@@ -867,9 +957,14 @@ input[type="email"]:focus,
   background-color: #eeeeee;
 }
 .products-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   margin: 0;
   margin-bottom: 54px;
@@ -932,6 +1027,8 @@ input[type="email"]:focus,
   background-color: #fb565a;
 }
 .sorting-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .sorting-position li,
@@ -942,9 +1039,14 @@ input[type="email"]:focus,
   text-transform: uppercase;
 }
 .sorting-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   width: 270px;
   margin: 0;
@@ -969,8 +1071,12 @@ input[type="email"]:focus,
   opacity: 1.0;
 }
 .user-sorting-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   width: 40px;
   margin: 0;
@@ -978,6 +1084,8 @@ input[type="email"]:focus,
   padding-bottom: 45px;
 }
 .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   margin: 0;
@@ -1020,7 +1128,8 @@ input[type="email"]:focus,
 .filter-button:active {
   background-color: #d5d5d5;
   border-color: #d5d5d5;
-  box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 .pagination-item:active a {
   color: #b7b7b7;
@@ -1121,6 +1230,8 @@ input[type="email"]:focus,
   margin-right: 35px;
 }
 .price-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   text-transform: uppercase;
@@ -1131,7 +1242,8 @@ input[type="email"]:focus,
   padding-bottom: 8px;
   
   margin-left: 8px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   text-align: center;
   background-color: #eeeeee;
@@ -1168,7 +1280,8 @@ input[type="email"]:focus,
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 3px 1px 0 #cfcfcf;
+  -webkit-box-shadow: 0 3px 1px 0 #cfcfcf;
+          box-shadow: 0 3px 1px 0 #cfcfcf;
 
   z-index: 30;
   cursor: pointer;
@@ -1188,7 +1301,9 @@ input[type="email"]:focus,
   margin-bottom: 16px;
 }
 .sorting-down svg {
-  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .user-sorting-position li {
   opacity: 0.2;
@@ -1206,14 +1321,20 @@ input[type="email"]:focus,
   color: #e74246;
   border-color: #e74246;
 }
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);transform: translateX(10px);}
+}
 @keyframes shake {
-	0%, 100% {transform: translateX(0);}
-  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-  20%, 40%, 60%, 80% {transform: translateX(10px);}
+	0%, 100% {-webkit-transform: translateX(0);transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);transform: translateX(10px);}
 }
 .modal-error-shake {
-  animation-name: shake;
-  animation-duration: 1s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
-
 
